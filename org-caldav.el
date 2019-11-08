@@ -793,7 +793,7 @@ If RESUME is non-nil, try to resume."
 		       (not (yes-or-no-p
 			     (concat "WARNING: Previously synced file(s) are missing: "
 				     (mapconcat 'identity missing ",")
-				     "%s. Are you sure you want to sync? "))))
+				     ". Are you sure you want to sync?"))))
 	      (user-error "Sync aborted"))))
 	;; Remove status in event list
 	(dolist (cur org-caldav-event-list)
